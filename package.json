@@ -1,0 +1,51 @@
+{
+  "name": "starter-ts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
+  "license": "MIT",
+  "homepage": "https://github.com/Debbl/pkg-placeholder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Debbl/pkg-placeholder.git"
+  },
+  "bugs": "https://github.com/Debbl/pkg-placeholder/issues",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub && node dist/index.cjs",
+    "build": "unbuild",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@debbl/eslint-config": "^2.0.1",
+    "@types/node": "^20.10.1",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2",
+    "unbuild": "^2.0.0",
+    "vitest": "^0.34.6"
+  }
+}
