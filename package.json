@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.0-alpha.0",
   "description": "",
+  "packageManager": "pnpm@8.12.1",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/pkg-placeholder#readme",
