@@ -1,7 +1,7 @@
 {
   "name": "starter-ts",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.0-alpha.0",
   "description": "",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
