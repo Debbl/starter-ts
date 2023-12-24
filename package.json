@@ -2,8 +2,8 @@
   "name": "starter-ts",
   "type": "module",
   "version": "0.0.0-alpha.0",
-  "description": "",
   "packageManager": "pnpm@8.12.1",
+  "description": "",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
   "homepage": "https://github.com/Debbl/pkg-placeholder#readme",
@@ -35,8 +35,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub && node dist/index.cjs",
-    "build": "unbuild",
+    "dev": "rimraf dist && rollup -c && node ./dist/index.cjs",
+    "build": "rimraf dist && rollup -c",
     "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -47,8 +47,11 @@
     "@types/node": "^20.10.5",
     "bumpp": "^9.2.1",
     "eslint": "^8.56.0",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.1",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.0",
     "typescript": "^5.3.3",
-    "unbuild": "^2.0.0",
     "vitest": "^1.0.4"
   }
 }
