@@ -2,7 +2,7 @@
   "name": "starter-ts",
   "type": "module",
   "version": "0.0.0-alpha.0",
-  "packageManager": "pnpm@8.15.4",
+  "packageManager": "pnpm@9.0.6",
   "description": "",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
@@ -35,8 +35,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "rimraf dist && rollup -c && node ./dist/index.cjs",
-    "build": "rimraf dist && rollup -c",
+    "dev": "pnpm build && node ./dist/index.cjs",
+    "build": "rimraf dist && rollup -c --configPlugin typescript",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
@@ -44,15 +44,17 @@
     "release": "bumpp && pnpm publish"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.0.6",
-    "@types/node": "^20.11.27",
+    "@debbl/eslint-config": "^3.1.3",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/node": "^20.12.7",
     "bumpp": "^9.4.0",
     "eslint": "^8.57.0",
     "rimraf": "^5.0.5",
-    "rollup": "^4.13.0",
+    "rollup": "^4.17.0",
     "rollup-plugin-dts": "^6.1.0",
-    "rollup-plugin-esbuild": "^6.1.1",
-    "typescript": "^5.4.2",
-    "vitest": "^1.3.1"
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.2"
   }
 }
