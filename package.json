@@ -6,12 +6,12 @@
   "description": "",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
-  "homepage": "https://github.com/Debbl/pkg-placeholder#readme",
+  "homepage": "https://github.com/Debbl/starter-ts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Debbl/pkg-placeholder.git"
+    "url": "git+https://github.com/Debbl/starter-ts.git"
   },
-  "bugs": "https://github.com/Debbl/pkg-placeholder/issues",
+  "bugs": "https://github.com/Debbl/starter-ts/issues",
   "keywords": [],
   "exports": {
     ".": {
