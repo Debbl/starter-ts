@@ -10,4 +10,4 @@ updates:
       all-dependencies:
         patterns:
           - "*"
-    versioning-strategy: "increase"
+        versioning-strategy: "increase"
