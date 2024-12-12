@@ -36,7 +36,7 @@
   ],
   "scripts": {
     "dev": "pnpm build && node ./dist/index.cjs",
-    "build": "rimraf dist && rollup -c --configPlugin typescript",
+    "build": "tsup",
     "test": "vitest",
     "release": "pnpm build && bumpp && pnpm publish",
     "typecheck": "tsc --noEmit",
@@ -46,17 +46,12 @@
   },
   "devDependencies": {
     "@debbl/eslint-config": "^3.8.4",
-    "@rollup/plugin-commonjs": "^28.0.1",
-    "@rollup/plugin-node-resolve": "^15.3.0",
-    "@rollup/plugin-typescript": "^12.1.1",
     "@types/node": "^22.10.1",
     "bumpp": "^9.8.1",
     "eslint": "^9.16.0",
     "lint-staged": "^15.2.10",
-    "rimraf": "^6.0.1",
-    "rollup": "^4.28.0",
-    "rollup-plugin-dts": "^6.1.1",
     "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.3.5",
     "typescript": "^5.7.2",
     "vitest": "^2.1.6"
   },
