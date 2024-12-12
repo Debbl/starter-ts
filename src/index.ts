@@ -1,6 +1,5 @@
-export function add(a: number, b: number) {
-  return a + b;
-}
+import type { ProgressInfo } from "@huggingface/transformers";
 
-// eslint-disable-next-line no-console
-console.log(add(1, 2));
+export function foo(progressInfo: ProgressInfo) {
+  return progressInfo;
+}

@@ -44,6 +44,9 @@
     "lint:fix": "eslint . --fix",
     "prepare": "simple-git-hooks"
   },
+  "dependencies": {
+    "@huggingface/transformers": "^3.1.2"
+  },
   "devDependencies": {
     "@debbl/eslint-config": "^3.8.4",
     "@types/node": "^22.10.1",
