@@ -1,5 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended", "schedule:earlyMondays"],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "matchPackageNames": ["*"],
+      "groupName": "allDependencies",
+      "groupSlug": "all-dependencies",
+      "automerge": true
+    }
+  ]
 }
