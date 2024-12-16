@@ -6,8 +6,9 @@
     {
       "matchPackageNames": ["*"],
       "groupName": "allDependencies",
-      "groupSlug": "all-dependencies",
-      "automerge": true
+      "automerge": true,
+      "automergeType": "pr-comment",
+      "automergeComment": "bors: r+"
     }
   ]
 }
