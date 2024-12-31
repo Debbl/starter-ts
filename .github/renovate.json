@@ -1,14 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "schedule:earlyMondays"],
-  "labels": ["dependencies"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["*"],
-      "groupName": "allDependencies",
-      "automerge": true,
-      "automergeType": "pr-comment",
-      "automergeComment": "bors: r+"
-    }
-  ]
+  "extends": ["gihub>Debbl/renovate-config:starter-template"]
 }
