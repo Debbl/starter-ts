@@ -2,7 +2,7 @@
   "name": "starter-ts",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.8.1",
+  "packageManager": "pnpm@10.11.0",
   "description": "starter-ts",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
@@ -36,7 +36,7 @@
   ],
   "scripts": {
     "dev": "pnpm build && node ./dist/index.cjs",
-    "build": "tsup",
+    "build": "tsdown",
     "test": "vitest",
     "release": "pnpm build && bumpp && pnpm publish",
     "typecheck": "tsc --noEmit",
@@ -45,15 +45,15 @@
     "prepare": "simple-git-hooks"
   },
   "devDependencies": {
-    "@debbl/eslint-config": "^3.10.2",
-    "@types/node": "^22.14.1",
-    "bumpp": "^10.1.0",
-    "eslint": "^9.24.0",
-    "lint-staged": "^15.5.1",
-    "simple-git-hooks": "^2.12.1",
-    "tsup": "^8.4.0",
+    "@debbl/eslint-config": "^3.11.0",
+    "@types/node": "^22.15.21",
+    "bumpp": "^10.1.1",
+    "eslint": "^9.27.0",
+    "lint-staged": "^16.0.0",
+    "simple-git-hooks": "^2.13.0",
+    "tsdown": "^0.11.12",
     "typescript": "^5.8.3",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.4"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
