@@ -11,8 +11,8 @@
     "resolveJsonModule": true,
     "strict": true,
     "strictNullChecks": true,
-    "declaration": false,
     "outDir": "./dist",
+    "sourceMap": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true
