@@ -25,7 +25,7 @@
     "src"
   ],
   "scripts": {
-    "dev": "pnpm build && node ./dist/index.cjs",
+    "dev": "node ./src/index.ts",
     "build": "tsdown",
     "test": "vitest",
     "release": "pnpm build && bumpp && pnpm publish",
