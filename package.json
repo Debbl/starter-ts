@@ -2,7 +2,7 @@
   "name": "starter-ts",
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.24.0",
   "description": "starter-ts",
   "author": "Brendan Dash <me@aiwan.run> (https://aiwan.run)",
   "license": "MIT",
