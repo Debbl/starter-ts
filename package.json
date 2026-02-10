@@ -28,7 +28,7 @@
     "dev": "node ./src/index.ts",
     "build": "tsdown",
     "test": "vitest",
-    "release": "pnpm build && bumpp && pnpm publish",
+    "release": "bumpp",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
